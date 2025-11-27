@@ -233,6 +233,6 @@ if prompt := st.chat_input("Ask me about board games..."):
 # Footer
 st.markdown("---")
 st.markdown(
-    "<div style='text-align: center; color: gray;'>Powered by Google Gemini 2.0 Flash & LangGraph</div>",
+    "<div style='text-align: center; color: gray;'> First try on AI agent ! Have fun testing this application.😏</div>",
     unsafe_allow_html=True
 )
