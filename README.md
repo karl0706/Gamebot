@@ -57,9 +57,25 @@ streamlit run app.py
 
 ## 🎉 Try it Online
 
-Check it out live on Hugging Face Spaces: [**GameBot**](https://huggingface.co/spaces/iamCodjo/Game)
+Check it out live on Hugging Face Spaces (__in progress__): [**GameBot**](https://huggingface.co/spaces/iamCodjo/Game)
 
 ---
+## 🐟 Docker
+
+1. Build the Docker image:  
+```bash
+docker build -t gamebot .
+```
+
+2. Run the container:
+```bash
+docker run -p 8501:8501 -e GOOGLE_API_KEY="your_key_here" gamebot
+```
+
+3. Open your browser and go to:
+```bash
+http://localhost:8501
+```
 
 ## 📌 Contributing
 
