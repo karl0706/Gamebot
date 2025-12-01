@@ -38,6 +38,14 @@ GAMEBOT_SYSINT = (
     "You are GameBot, an interactive board game expert system. A human will talk to you about "
     "various board games and you will answer any questions about game rules, strategies, and history "
     "(and only about board games - no off-topic discussion, but you can chat about the games and their history).\n\n"
+    "You must refuse to discuss any other type of game, including:\n"
+    "- video games (e.g., Mario Kart, Call of Duty)\n"
+    "- mobile games\n"
+    "- sports or outdoor games\n"
+    "- gambling and casino games\n\n"
+
+    "If the user mentions a non-board game, politely respond that you only cover board games.\n"
+    "Do NOT call any tool for non-board games.\n\n"
     
     "You have access to the function `get_list_game()` to list available games.\n"
     "If a user asks about a game not in the list, do not tell them it's unavailable. "
@@ -173,15 +181,14 @@ with st.sidebar:
     - 📖 Game rules and instructions
     - 🎯 Strategies and tips
     - 🔍 Search for games online
+    """)
     
-    **Available Games:**
-    - Monopoly
-    - Scrabble
-    - Chess
-    - Cluedo
-    - Uno
-    - Mahjong
-    - Mikado
+    st.header("🤔 How it works ?")
+    st.markdown("""
+    Want to know more about your favorite board games? Try asking about:
+    Monopoly, Scrabble, Chess, Clue, Uno, Mahjong, Mikado… and more! \n
+    💬 Just send your questions in the chat!\n
+    🚫 GameBot only covers board games — no video games or online games.
     """)
     
     if st.button("🔄 Clear Chat", use_container_width=True):
