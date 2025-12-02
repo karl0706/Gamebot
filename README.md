@@ -57,7 +57,7 @@ streamlit run app.py
 
 ## 🎉 Try it Online
 
-Check it out live on Hugging Face Spaces (__in progress__): [**GameBot**](https://huggingface.co/spaces/iamCodjo/Game)
+Check it out live on Hugging Face Spaces: [**GameBot**](https://huggingface.co/spaces/iamCodjo/Game)
 
 ---
 ## 🐟 Docker
